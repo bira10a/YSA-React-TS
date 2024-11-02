@@ -1,17 +1,14 @@
 import React from "react";
-
 import '../style/homePage.scss';
+import videoBackground from '../images/homePage/homePageBackground.webm';
 
-import Logo from '../images/aboutUs/staff.jpg';
-
-const HomePage = () => {
+const HomePage: React.FC = () => {
     return (
         <section className="homePage">
             <div className="homePage__background">
-                {/* <video autoPlay muted loop>
-                    <source src={`${process.env.PUBLIC_URL}/images/homePage/homePageBackground.webm`} type="video/webm" />
-                    Ваш браузер не поддерживает встроенные видео
-                </video> */}
+                <video autoPlay muted loop>
+                    <source src={videoBackground} type="video/webm" />
+                </video>
             </div>
 
             <div className="homePage__container">
